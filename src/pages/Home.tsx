@@ -1,8 +1,8 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Carousel } from '../components/Carousel';
 import { Button } from '../components/Button';
 import { BackgroundMusic } from '../components/BackgroundMusic';
-import { useNavigate } from 'react-router-dom';
 
 export function Home() {
   const navigate = useNavigate();
@@ -38,7 +38,7 @@ export function Home() {
       </div>
 
       {/* Mission Section */}
-      <div className="bg-white py-16">
+      <section className="bg-white py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
@@ -50,8 +50,9 @@ export function Home() {
             </p>
           </div>
         </div>
-      </div>
+      </section>
 
+      {/* Background Music */}
       <BackgroundMusic />
     </>
   );
